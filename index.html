@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiaoda Li — Homepage</title>
+
+  <!-- Meta / SEO -->
+  <meta name="description" content="Jiaoda Li" />
+  <link rel="canonical" href="https://jiaodali.github.io/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Jiaoda Li — Academic Homepage" />
+  <meta property="og:description" content="PhD Student at ETH Zürich · NLP · ML · Formal Methods" />
+  <meta property="og:image" content="img/photo.jpg" />
+  <meta property="og:type" content="profile" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Basic theming + dark mode -->
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root {
+      --fg: #0f172a;
+      --muted: #475569;
+      --line: #e2e8f0;
+      --link: #2563eb;
+      --bg: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e5e7eb;
+        --muted: #cbd5e1;
+        --line: #1f2937;
+        --link: #60a5fa;
+        --bg: #0b1020;
+      }
+    }
+
+    html, body { height: 100%; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, sans-serif;
+      max-width: 760px;
+      margin: 2.5rem auto;
+      padding: 0 1rem;
+      line-height: 1.65;
+      color: var(--fg);
+      background: var(--bg);
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+
+    header { text-align: center; margin-bottom: 2.25rem; }
+    img.avatar {
+      width: 140px; height: auto;
+      border-radius: 50%;
+      box-shadow: 0 6px 24px rgba(2, 6, 23, .12);
+      object-fit: contain;
+    }
+    h1 { margin: 0.85rem 0 0.25rem; font-size: clamp(1.75rem, 3.5vw, 2.25rem); }
+    .subtitle { color: var(--muted); margin-top: .25rem; }
+
+    nav[aria-label="Primary"] {
+      display: flex; justify-content: center; gap: .5rem; margin-top: .6rem; flex-wrap: wrap;
+      color: var(--muted);
+    }
+
+    section { margin: 2rem 0; }
+    h2 { font-size: 1.25rem; margin: 0 0 .5rem; }
+    p { margin: .5rem 0 0; }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: .75rem;
+      padding: 1rem;
+      margin-top: .75rem;
+    }
+
+    .icons {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+    .icons svg { width: 20px; height: 20px; }
+
+    .edu-list { list-style: none; padding: 0; margin: 0; }
+    .edu-item {
+      display: flex; justify-content: space-between; gap: 1rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px dashed var(--line);
+      padding-bottom: 0.35rem;
+    }
+    .edu-when { color: var(--muted); white-space: nowrap; }
+    @media (max-width: 560px) {
+      .edu-item { flex-direction: column; align-items: flex-start; }
+    }
+
+    .pub-list { list-style: none; padding: 0; margin: .5rem 0 0; }
+    .pub-item {
+      border: 1px solid var(--line);
+      border-radius: .75rem;
+      padding: .75rem .9rem;
+      margin-top: .6rem;
+    }
+    .pub-meta { color: var(--muted); font-size: .95rem; margin-top:.25rem; }
+
+    footer { text-align: center; margin-top: 2.75rem; font-size: .95rem; color: var(--muted); }
+
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+  </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Jiaoda Li",
+    "affiliation":{"@type":"CollegeOrUniversity","name":"ETH Zürich"},
+    "jobTitle":"PhD Student",
+    "url": "https://yourusername.github.io/",
+    "image": "img/photo.jpg",
+    "alumniOf": [
+      {"@type":"CollegeOrUniversity","name":"ETH Zürich"},
+      {"@type":"CollegeOrUniversity","name":"City University of Hong Kong"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+
+  <header>
+    <img src="img/photo.jpg" alt="Portrait of Jiaoda Li" class="avatar" width="280" height="280" loading="lazy" />
+    <h1>Jiaoda Li</h1>
+    <div class="icons">
+      <a href="mailto:jiaoda.li@ai.ethz.ch" aria-label="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 
+                   2 0 0 1-2 2H4a2 2 0 0 1-2-2V4Zm2 0v.01L12 
+                   13l8-8.99V4H4Zm16 16V6.41l-8 8-8-8V20h16Z"/>
+        </svg>
+      </a>
+      <a href="https://scholar.google.com/citations?user=YmU4mmAAAAAJ&hl=en"
+         aria-label="Google Scholar" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm0 
+                   10.9L4.24 9 12 5.1 19.76 9 12 13.9zm0 
+                   2.6c-3.04 0-9 1.54-9 4.6V23h18v-1.9c0-3.06-5.96-4.6-9-4.6z"/>
+        </svg>
+      </a>
+    </div>
+
+    <nav aria-label="Primary">
+      <a href="#about">About</a> · <a href="#publications">Publications</a> · <a href="#education">Education</a>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <div class="card">
+        <p>
+          I am a Doctoral Fellow at the
+          <a href="https://ai.ethz.ch/">ETH AI Center</a>. My research lies at the intersection of
+          <strong>natural language processing</strong> and <strong>machine learning</strong>.
+          I focus on using formal methods—such as <em>formal logic</em>, <em>formal language theory</em>,
+          and <em>circuit complexity</em>—to both analyze and interpret modern deep learning models,
+          and to guide the development of new architectures and algorithms that draw inspiration
+          from these formal perspectives.
+        </p>
+        <p>
+          I am fortunate to be advised by
+          <a href="https://rycolab.io/authors/ryan/">Ryan Cotterell</a>
+          and co-advised by
+          <a href="https://lre.inf.ethz.ch/">Mrinmaya Sachan</a>.
+        </p>
+      </div>
+    </section>
+
+    <section id="publications" aria-labelledby="pubs-heading">
+      <h2 id="pubs-heading">Selected Publications</h2>
+      <ul class="pub-list">
+        <li class="pub-item">
+          <a href="https://dblp.org/rec/journals/corr/abs-2505-23623" target="_blank" rel="noopener">
+            <strong>Characterizing the Expressivity of Fixed-Precision Transformer Language Models</strong>
+          </a>
+          <div class="pub-meta">Jiaoda Li, Ryan Cotterell · 2025</div>
+        </li>
+        <li class="pub-item">
+          <a href="https://aclanthology.org/2025.acl-short.76/" target="_blank" rel="noopener">
+            <strong>Unique Hard Attention: A Tale of Two Sides</strong>
+          </a>
+          <div class="pub-meta">Selim Jerad, Anej Svete, Jiaoda Li, Ryan Cotterell · 2025</div>
+        </li>
+        <li class="pub-item">
+          <a href="https://aclanthology.org/2024.acl-long.669/" target="_blank" rel="noopener">
+            <strong>What Do Language Models Learn in Context? The Structured Task Hypothesis</strong>
+          </a>
+          <div class="pub-meta">Jiaoda Li, Yifan Hou, Mrinmaya Sachan, Ryan Cotterell · ACL 2024</div>
+        </li>
+        <li class="pub-item">
+          <a href="https://aclanthology.org/2024.findings-naacl.269/" target="_blank" rel="noopener">
+            <strong>A Transformer with Stack Attention</strong>
+          </a>
+          <div class="pub-meta">Jiaoda Li, Jennifer C. White, Mrinmaya Sachan, Ryan Cotterell · NAACL Findings 2024</div>
+        </li>
+        <li class="pub-item">
+          <a href="https://aclanthology.org/2023.emnlp-main.299/" target="_blank" rel="noopener">
+            <strong>Towards a Mechanistic Interpretation of Multi-Step Reasoning Capabilities of Language Models</strong>
+          </a>
+          <div class="pub-meta">Yifan Hou, Jiaoda Li, Yu Fei, Alessandro Stolfo, Wangchunshu Zhou, Guangtao Zeng, Antoine Bosselut, Mrinmaya Sachan · EMNLP 2023</div>
+        </li>
+        <li class="pub-item">
+          <a href="https://aclanthology.org/2022.naacl-main.84/" target="_blank" rel="noopener">
+            <strong>Probing via Prompting</strong>
+          </a>
+          <div class="pub-meta">Jiaoda Li, Ryan Cotterell, Mrinmaya Sachan · NAACL 2022</div>
+        </li>
+        <li class="pub-item">
+          <a href="https://aclanthology.org/2021.tacl-1.86/" target="_blank" rel="noopener">
+            <strong>Differentiable Subset Pruning of Transformer Heads</strong>
+          </a>
+          <div class="pub-meta">Jiaoda Li, Ryan Cotterell, Mrinmaya Sachan · TACL 2021</div>
+        </li>
+        <li class="pub-item">
+          <a href="https://aclanthology.org/2021.emnlp-main.673/" target="_blank" rel="noopener">
+            <strong>Vision Matters When It Should: Sanity Checking Multimodal Machine Translation Models</strong>
+          </a>
+          <div class="pub-meta">Jiaoda Li, Duygu Ataman, Rico Sennrich · EMNLP 2021</div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <ul class="edu-list">
+        <li class="edu-item">
+          <div><strong>Ph.D. in Computer Science</strong>, ETH Zürich</div>
+          <div class="edu-when">2021 - 2025 (expected)</div>
+        </li>
+        <li class="edu-item">
+          <div><strong>Master's in Data Science</strong>, ETH Zürich</div>
+          <div class="edu-when">2018 - 2021</div>
+        </li>
+        <li class="edu-item">
+          <div><strong>Bachelor's in Electronic and Communication Engineering</strong>, City University of Hong Kong</div>
+          <div class="edu-when">2014 - 2018</div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Jiaoda Li · All rights reserved
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
