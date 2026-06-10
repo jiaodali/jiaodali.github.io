@@ -11,7 +11,7 @@
 
   <!-- Open Graph / Twitter -->
   <meta property="og:title" content="Jiaoda Li — Academic Homepage" />
-  <meta property="og:description" content="PhD Student at ETH Zürich · NLP · ML · Formal Methods" />
+  <meta property="og:description" content="Postdoctoral Researcher at ETH Zurich · NLP · ML · Formal Methods" />
   <meta property="og:image" content="img/photo.jpg" />
   <meta property="og:type" content="profile" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -84,7 +84,16 @@
       justify-content: center;
       gap: 0.75rem;
     }
-    .icons svg { width: 20px; height: 20px; }
+    .icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+    }
+    .icons svg { width: 17px; height: 17px; }
 
     .edu-list { list-style: none; padding: 0; margin: 0; }
     .edu-item {
@@ -118,12 +127,12 @@
     "@context":"https://schema.org",
     "@type":"Person",
     "name":"Jiaoda Li",
-    "affiliation":{"@type":"CollegeOrUniversity","name":"ETH Zürich"},
-    "jobTitle":"PhD Student",
-    "url": "https://yourusername.github.io/",
+    "affiliation":{"@type":"CollegeOrUniversity","name":"ETH Zurich"},
+    "jobTitle":"Postdoctoral Researcher",
+    "url": "https://jiaodali.github.io/",
     "image": "img/photo.jpg",
     "alumniOf": [
-      {"@type":"CollegeOrUniversity","name":"ETH Zürich"},
+      {"@type":"CollegeOrUniversity","name":"ETH Zurich"},
       {"@type":"CollegeOrUniversity","name":"City University of Hong Kong"}
     ]
   }
@@ -137,18 +146,19 @@
     <h1>Jiaoda Li</h1>
     <div class="icons">
       <a href="mailto:jiaoda.li@ai.ethz.ch" aria-label="Email">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 
-                   2 0 0 1-2 2H4a2 2 0 0 1-2-2V4Zm2 0v.01L12 
-                   13l8-8.99V4H4Zm16 16V6.41l-8 8-8-8V20h16Z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+          <path d="m22 7-8.97 5.7a2 2 0 0 1-2.06 0L2 7"></path>
         </svg>
       </a>
       <a href="https://scholar.google.com/citations?user=YmU4mmAAAAAJ&hl=en"
          aria-label="Google Scholar" target="_blank" rel="noopener">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm0 
-                   10.9L4.24 9 12 5.1 19.76 9 12 13.9zm0 
-                   2.6c-3.04 0-9 1.54-9 4.6V23h18v-1.9c0-3.06-5.96-4.6-9-4.6z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 10v6"></path>
+          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+          <path d="m2 8 10-5 10 5-10 5Z"></path>
         </svg>
       </a>
     </div>
@@ -163,19 +173,12 @@
       <h2 id="about-heading">About</h2>
       <div class="card">
         <p>
-          I am a Doctoral Fellow at the
-          <a href="https://ai.ethz.ch/">ETH AI Center</a>. My research lies at the intersection of
-          <strong>natural language processing</strong> and <strong>machine learning</strong>.
-          I focus on using formal methods—such as <em>formal logic</em>, <em>formal language theory</em>,
-          and <em>circuit complexity</em>—to both analyze and interpret modern deep learning models,
-          and to guide the development of new architectures and algorithms that draw inspiration
-          from these formal perspectives.
-        </p>
-        <p>
-          I am fortunate to be advised by
-          <a href="https://rycolab.io/authors/ryan/">Ryan Cotterell</a>
-          and co-advised by
-          <a href="https://lre.inf.ethz.ch/">Mrinmaya Sachan</a>.
+          I am a postdoctoral researcher at ETH Zurich, advised by Ryan Cotterell.
+          My research lies at the intersection of
+          natural language processing and machine learning.
+          I use formal methods—including <em>formal logic</em>, <em>formal language theory</em>,
+          and <em>circuit complexity</em>—to analyze and interpret modern deep learning models,
+          and to guide the development of new architectures and algorithms inspired by these formal perspectives.
         </p>
       </div>
     </section>
@@ -184,22 +187,34 @@
       <h2 id="pubs-heading">Selected Publications</h2>
       <ul class="pub-list">
         <li class="pub-item">
-          <a href="https://dblp.org/rec/journals/corr/abs-2505-23623" target="_blank" rel="noopener">
+          <a href="https://arxiv.org/abs/2605.00768" target="_blank" rel="noopener">
+            <strong>Characterizing the Expressivity of Local Attention in Transformers</strong>
+          </a>
+          <div class="pub-meta">Jiaoda Li, Ryan Cotterell · ACL 2026 · Oral</div>
+        </li>
+        <li class="pub-item">
+          <a href="https://openreview.net/forum?id=gZIcyx1tQY" target="_blank" rel="noopener">
+            <strong>Probability Distributions Computed by Hard-Attention Transformers</strong>
+          </a>
+          <div class="pub-meta">Andy Yang, Anej Svete, Jiaoda Li, Anthony Widjaja Lin, Jonathan Rawski, Ryan Cotterell, David Chiang · ICLR 2025</div>
+        </li>
+        <li class="pub-item">
+          <a href="https://openreview.net/forum?id=29LwAgLFpj" target="_blank" rel="noopener">
             <strong>Characterizing the Expressivity of Fixed-Precision Transformer Language Models</strong>
           </a>
-          <div class="pub-meta">Jiaoda Li, Ryan Cotterell · 2025</div>
+          <div class="pub-meta">Jiaoda Li, Ryan Cotterell · NeurIPS 2025 · Spotlight</div>
         </li>
         <li class="pub-item">
           <a href="https://aclanthology.org/2025.acl-short.76/" target="_blank" rel="noopener">
             <strong>Unique Hard Attention: A Tale of Two Sides</strong>
           </a>
-          <div class="pub-meta">Selim Jerad, Anej Svete, Jiaoda Li, Ryan Cotterell · 2025</div>
+          <div class="pub-meta">Selim Jerad, Anej Svete, Jiaoda Li, Ryan Cotterell · ACL 2025 · Oral</div>
         </li>
         <li class="pub-item">
           <a href="https://aclanthology.org/2024.acl-long.669/" target="_blank" rel="noopener">
             <strong>What Do Language Models Learn in Context? The Structured Task Hypothesis</strong>
           </a>
-          <div class="pub-meta">Jiaoda Li, Yifan Hou, Mrinmaya Sachan, Ryan Cotterell · ACL 2024</div>
+          <div class="pub-meta">Jiaoda Li, Yifan Hou, Mrinmaya Sachan, Ryan Cotterell · ACL 2024 · Oral</div>
         </li>
         <li class="pub-item">
           <a href="https://aclanthology.org/2024.findings-naacl.269/" target="_blank" rel="noopener">
@@ -217,13 +232,13 @@
           <a href="https://aclanthology.org/2022.naacl-main.84/" target="_blank" rel="noopener">
             <strong>Probing via Prompting</strong>
           </a>
-          <div class="pub-meta">Jiaoda Li, Ryan Cotterell, Mrinmaya Sachan · NAACL 2022</div>
+          <div class="pub-meta">Jiaoda Li, Ryan Cotterell, Mrinmaya Sachan · NAACL 2022 · Oral</div>
         </li>
         <li class="pub-item">
           <a href="https://aclanthology.org/2021.tacl-1.86/" target="_blank" rel="noopener">
             <strong>Differentiable Subset Pruning of Transformer Heads</strong>
           </a>
-          <div class="pub-meta">Jiaoda Li, Ryan Cotterell, Mrinmaya Sachan · TACL 2021</div>
+          <div class="pub-meta">Jiaoda Li, Ryan Cotterell, Mrinmaya Sachan · TACL 2021 · Oral presentation at EMNLP 2021</div>
         </li>
         <li class="pub-item">
           <a href="https://aclanthology.org/2021.emnlp-main.673/" target="_blank" rel="noopener">
@@ -238,11 +253,16 @@
       <h2 id="education-heading">Education</h2>
       <ul class="edu-list">
         <li class="edu-item">
-          <div><strong>Ph.D. in Computer Science</strong>, ETH Zürich</div>
-          <div class="edu-when">2021 - 2025 (expected)</div>
+          <div>
+            <strong>PhD in Computer Science</strong>, ETH Zurich<br />
+            Doctoral Fellow at the ETH AI Center<br />
+            Dissertation: <em>Understanding and Extending the Expressive Power of Transformers</em><br />
+            Advisor: Ryan Cotterell
+          </div>
+          <div class="edu-when">2021 - 2026</div>
         </li>
         <li class="edu-item">
-          <div><strong>Master's in Data Science</strong>, ETH Zürich</div>
+          <div><strong>Master's in Data Science</strong>, ETH Zurich</div>
           <div class="edu-when">2018 - 2021</div>
         </li>
         <li class="edu-item">
